@@ -4,19 +4,19 @@
     <div class="card-filter">
       <v-tooltip text="Сортировка по возрастанию рейтинга">
         <template v-slot:activator="{ props }">
-          <v-btn v-bind="props" icon="mdi-sort" density="compact" variant="tonal" class="sort-btn" color="blue"
+          <v-btn v-bind="props" icon="mdi-sort-variant" density="compact" variant="tonal" class="sort-up" color="blue"
             @click="sortListUpToDown" />
         </template>
       </v-tooltip>
       <v-tooltip text="Сортировка по убыванию рейтинга">
         <template v-slot:activator="{ props }">
-          <v-btn v-bind="props" icon="mdi-sort" density="compact" variant="tonal" class="sort-btn" color="blue"
+          <v-btn v-bind="props" icon="mdi-sort-reverse-variant" density="compact" variant="tonal" class="sort-down" color="blue"
             @click="sortListDownToUp" />
         </template>
       </v-tooltip>
       <v-tooltip text="Убрать сортировку">
         <template v-slot:activator="{ props }">
-          <v-btn v-bind="props" icon="mdi-sort" density="compact" variant="tonal" class="sort-btn" color="blue"
+          <v-btn v-bind="props" icon="mdi-sort-variant-remove" density="compact" variant="tonal" class="sort-random" color="blue"
             @click="sortListToInitialState" />
         </template>
       </v-tooltip>
@@ -163,6 +163,9 @@ section {
     justify-content: space-evenly;
     width: 50%;
     margin-bottom: 14px;
+    background: white;
+    border-radius: 4px;
+    padding: 4px;
   }
 
   .title {
