@@ -1,6 +1,6 @@
 <template>
   <main>
-    <CardList v-for="(item, index) in CardListOptions" :key="index" :options="item" />
+    <CardList v-for="(item, index) in CardListOptions" :key="index" :options="item"/>
   </main>
 </template>
 
